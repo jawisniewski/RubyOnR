@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ran.name %>
+</p>
+
+<p>
+  <strong>Cars:</strong>
+  <%= @ran.cars %>
+</p>
+
+<%= link_to 'Edit', edit_ran_path(@ran) %> |
+<%= link_to 'Back', rans_path %>
