@@ -33,3 +33,5 @@
 <%= link_to 'New Run', new_run_path  , :class => "btn btn-primary" %>
 
 
+
+<%= column_chart @runs.group(:cars_id).count , xtitle: "numer auta", ytitle: "ilość tras"  %>
