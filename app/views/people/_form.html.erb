@@ -10,33 +10,55 @@
       </ul>
     </div>
   <% end %>
+    <div class="form-horizontal">
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= f.label :login %>
+        </div>
+        <div class="col-md-5">
+          <%= f.text_field :login, class: "form-control"%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= f.label :firstname %>
+        </div>
+        <div class="col-md-5">
+          <%= f.text_field :firstname, class: "form-control"%>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= f.label :login %>
-    <%= f.text_field :login %>
-  </div>
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= f.label :lastname %>
+        </div>
+        <div class="col-md-5">
+          <%= f.text_field :lastname, class: "form-control"%>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= f.label :firstname %>
-    <%= f.text_field :firstname %>
-  </div>
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= f.label :password %>
+        </div>
+        <div class="col-md-5">
+          <%= f.password_field :password, class: "form-control"%>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-2">
+          <%= f.label :password_confirmation %>
+        </div>
+        <div class="col-md-5">
+          <%= f.password_field :password_confirmation, class: "form-control"%>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= f.label :lastname %>
-    <%= f.text_field :lastname %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-
+    <div class="form-group">
+      <div class="col-md-offset-2 col-md-5">
   <div class="actions">
     <%= f.submit %>
-  </div>
+    </div>
+      </div>
+  </div></div>
 <% end %>

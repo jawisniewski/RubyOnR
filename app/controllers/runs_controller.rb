@@ -1,5 +1,6 @@
 class RunsController < ApplicationController
   before_action :set_run, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:view ,:index]
   # GET /runs
   # GET /runs.json
   def index

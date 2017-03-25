@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class="text-justify">
 <p>
   <strong>Name:</strong>
   <%= @run.name %>
@@ -19,6 +19,6 @@
   <strong>Cars:</strong>
   <%= @run.cars_id %>
 </p>
-
-<%= link_to 'Edit', edit_run_path(@run) %> |
-<%= link_to 'Back', runs_path %>
+</div>
+<%= link_to 'Edit', edit_run_path(@run) , :class => "btn btn-warning" %>
+<%= link_to 'Back', runs_path , :class => "btn btn-primary" %>
