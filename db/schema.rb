@@ -29,13 +29,6 @@ ActiveRecord::Schema.define(version: 20170322171554) do
     t.datetime "updated_at",      null: false
   end
 
-  create_table "rans", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "cars_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cars_id"], name: "index_rans_on_cars_id"
-  end
 
   create_table "runs", force: :cascade do |t|
     t.string   "name"
@@ -46,13 +39,5 @@ ActiveRecord::Schema.define(version: 20170322171554) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string   "firstName"
-    t.string   "lastName"
-    t.string   "login"
-    t.string   "password"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
 end

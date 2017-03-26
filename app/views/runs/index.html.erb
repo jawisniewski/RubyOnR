@@ -20,10 +20,13 @@
         <td><%= run.price %></td>
         <td><%= run.distance %></td>
         <td><%= run.cars_id %></td>
+
+        <% if session[:user_id] %>
         <td><%= link_to 'Show', run , :class => "btn btn-info "  %></td>
         <td><%= link_to 'Edit', edit_run_path(run) , :class => "btn btn-warning"  %></td>
         <td><%= link_to 'Destroy', run, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn btn-danger"  %></td>
-      </tr>
+      <% end %>
+            </tr>
     <% end %>
   </tbody>
 </table>
