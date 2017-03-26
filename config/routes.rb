@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resources :rans
   resources :runs
   resources :cars
+  get 'cars/index'
+  root 'cars#index'
 
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
