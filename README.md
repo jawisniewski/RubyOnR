@@ -1,24 +1,28 @@
-# README
+<h1>Jakub Wiśniewski (zaliczenie)</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- [Firma Transportowa](https://firmatransportowa.herokuapp.com/)
 
-Things you may want to cover:
+<table>
+  <tr>
+    <th>Ruby</th>
+    <th>Rails</th>
+    <th>Baza danych</th>
+    <th>Framework</th>
+  </tr>
+  <tr>
+    <td>2.4.0</td>
+    <td>5.0.2</td>
+    <td>SQLite3 (lokalnie), postgresql (heroku)</td>
+    <td>bootstrap</td>
+  </tr>
+</table>
 
-* Ruby version
+<h2>Firma transportowa</h2>
 
-* System dependencies
+Strona internetowa pozwalająca na zarządzanie flotą pojazdów ciężarowych.
 
-* Configuration
 
-* Database creation
+<h2>Dodatkowe gemy</h2>
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<strong>bcrypt</strong> - zarządzanie hasłem<br>
+<strong>chartkick</strong> - tworzenie grafów<br>
