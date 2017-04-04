@@ -19,14 +19,14 @@
 
  
 
-
+<ul>
       <% if session[:user_id] %>
           <li role="presentation"><%= link_to t('logout'), logout_path %></li>
       <% else %>
           <li role="presentation"><%= link_to t('login'), login_path %></li>
           <li role="presentation"><%= link_to t('signup'), new_person_path %></li>
       <% end %>
-
+    </ul>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
