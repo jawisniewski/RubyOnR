@@ -17,13 +17,7 @@
 
     <a href="#menu-toggle" class="navbar-brand" id="menu-toggle">Wyświetl menu</a>
 
-    <ul class="nav navbar-nav navbar-right" style="padding-right: 50px" >
-      <% if   session[:user_id] %>
-       <li role="presentation" style="margin: 15% auto">Hello!</li>
-      <% else %>
-       <li role="presentation" style="margin: 5% auto">Załóż konto lub się zaloguj!</li>
-      <% end %>
-
+ 
 
 
       <% if session[:user_id] %>
