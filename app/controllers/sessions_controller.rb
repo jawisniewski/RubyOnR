@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
       session[:user_id] =user.id
       redirect_to cars_url
     else
-    redirect_to login_url alert:"Błedny login lub haslo"
+      flash[:alert] = "Bledny login lub haslo"
+      redirect_to login_url
     end
   end
 

@@ -3,9 +3,12 @@ class RunsController < ApplicationController
   skip_before_action :authorize, only: [:view ,:index]
   # GET /runs
   # GET /runs.json
-  def index
-    @runs = Run.all
-  end
+
+    def index
+      @runs  = Run.search(params[:search])
+    end
+
+
 
   # GET /runs/1
   # GET /runs/1.json
