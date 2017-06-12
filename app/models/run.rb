@@ -4,7 +4,7 @@ class Run < ApplicationRecord
   def self.search(search)
     if search
       if search != ""
-      where(:Name =>   "#{search}")
+      where(:name =>   "#{search}")
       else
         all
       end
