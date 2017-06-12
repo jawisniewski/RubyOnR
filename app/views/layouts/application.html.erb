@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>Firma</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "https://www.google.com/jsapi" %>
+    
   </head>
 
   <body>
   <nav class="navbar navbar-default navbar-fixed-top">
-
+	<div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-
+<div class="navbar-header">
+			
     <a href="#menu-toggle" class="navbar-brand" id="menu-toggle">Wyświetl menu</a>
-
-    <ul class="nav navbar-nav navbar-right" style="padding-right: 50px" >
-      <% if   session[:user_id] %>
-       <li role="presentation" style="margin: 15% auto" id ="logged">Hello!</li>
-      <% else %>
-       <li role="presentation" style="margin: 5% auto">Załóż konto lub się zaloguj!</li>
-      <% end %>
+    </div>
+ 
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
+<ul class="nav navbar-nav navbar-right">
 
       <% if session[:user_id] %>
-          <li role="presentation"><%= link_to t('logout'), logout_path %></li>
+      <li role="presentation" style="margin: 15% auto" id ="logged">Hello!</li>
+          <li ><%= link_to t('logout'), logout_path %></li>
       <% else %>
-          <li role="presentation"><%= link_to t('login'), login_path %></li>
-          <li role="presentation"><%= link_to t('signup'), new_person_path %></li>
+          <li ><%= link_to t('login'), login_path %></li>
+          <li ><%= link_to t('signup'), new_person_path %></li>
       <% end %>
-
     </ul>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
+     
 
       </div><!-- /.navbar-collapse -->
-
+	  </div>
   </nav>
 
   <div id="wrapper">
